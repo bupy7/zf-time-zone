@@ -1,6 +1,6 @@
 <?php
 
-namespace TimeZone\Options;
+namespace Bupy7\Zf\TimeZone\Options;
 
 use Interop\Container\ContainerInterface;
 use Zend\ServiceManager\Factory\FactoryInterface;

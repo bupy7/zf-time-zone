@@ -32,7 +32,17 @@ to the require section of your composer.json file.
 Usage
 -----
 
-# TODO
+1: Add `Bupy7\Zf\TimeZone` to module list.
+
+2: Set your time zone in local config:
+
+```php
+'time_zone' => [
+    'time_zone' => 'Europe/Moscow',
+],
+```
+
+3: Profit!
 
 License
 -------

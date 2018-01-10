@@ -1,6 +1,6 @@
 <?php
 
-namespace TimeZone;
+namespace Bupy7\Zf\TimeZone;
 
 use Zend\ModuleManager\Feature\ConfigProviderInterface;
 use Zend\ModuleManager\Feature\BootstrapListenerInterface;

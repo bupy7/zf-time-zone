@@ -1,6 +1,6 @@
 <?php
 
-namespace TimeZone\Options;
+namespace Bupy7\Zf\TimeZone\Options;
 
 use Zend\Stdlib\AbstractOptions;
 

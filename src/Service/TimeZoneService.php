@@ -1,6 +1,6 @@
 <?php
 
-namespace TimeZone\Service;
+namespace Bupy7\Zf\TimeZone\Service;
 
 use DateTimeZone;
 

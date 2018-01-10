@@ -37,11 +37,11 @@
   },
   "autoload-dev": {
     "psr-4": {
-      "Bupy7\\Zf\\TimeZone\\Test\\": "tests/"
+      "Bupy7\\Zf\\TimeZone\\Test\\": "test/"
     }
   },
   "scripts": {
-    "test": "php vendor/bin/phpunit --debug",
-    "fixer": "php vendor/bin/php-cs-fixer fix --config=phpcs.php"
+    "test:run": "php vendor/bin/phpunit --debug",
+    "cs:fix": "php vendor/bin/php-cs-fixer fix --config=phpcs.php"
   }
 }

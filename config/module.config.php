@@ -1,6 +1,6 @@
 <?php
 
-namespace TimeZone;
+namespace Bupy7\Zf\TimeZone;
 
 return [
     'time_zone' => [
