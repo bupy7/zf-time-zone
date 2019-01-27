@@ -25,6 +25,7 @@ class ConfigProvider
                 Service\TimeZoneService::class => Service\TimeZoneServiceFactory::class,
                 Options\ModuleOptions::class => Options\ModuleOptionsFactory::class,
                 Bootstrap::class => ReflectionBasedAbstractFactory::class,
+                Middleware\BootstrapMiddleware::class => ReflectionBasedAbstractFactory::class,
             ],
         ];
     }
