@@ -1,5 +1,5 @@
-zf-queue
-========
+zf-time-zone
+============
 
 [![Latest Stable Version](https://poser.pugx.org/bupy7/zf-time-zone/v/stable)](https://packagist.org/packages/bupy7/zf-time-zone)
 [![Total Downloads](https://poser.pugx.org/bupy7/zf-time-zone/downloads)](https://packagist.org/packages/bupy7/zf-time-zone)
