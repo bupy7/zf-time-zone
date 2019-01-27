@@ -1,8 +1,9 @@
-<?php
+<?php declare(strict_types=1);
 
 namespace Bupy7\Zf\TimeZone\Service;
 
 use DateTimeZone;
+use function date_default_timezone_set;
 
 class TimeZoneService
 {

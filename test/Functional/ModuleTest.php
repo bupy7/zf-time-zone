@@ -2,15 +2,20 @@
 
 namespace Bupy7\Zf\TimeZone\Test\Functional;
 
-use Zend\ServiceManager\ServiceManager;
+use PHPUnit\Framework\TestCase;;
 use Zend\Test\Util\ModuleLoader;
+use Bupy7\Zf\TimeZone\Module;
 
 /**
- * @author Vasily Belosloodcev <https://github.com/bupy7>
+ * @author Belosloodcev Vasily <https://github.com/bupy7>
+ * @since 1.0.1
  */
-trait AppTrait
+class ModuleTest extends TestCase
 {
-    private function getSm(array $config = []): ServiceManager
+    /**
+     * A test of module loader.
+     */
+    public function testLoader(): void
     {
         $moduleLoader = new ModuleLoader([
             'modules' => [
@@ -18,15 +23,14 @@ trait AppTrait
                 'Bupy7\Zf\TimeZone',
             ],
             'module_listener_options' => [
-                'config_glob_paths' => [],
-                'extra_config' => $config,
-                'module_paths' => [],
+                'module_paths' => [
+                    __DIR__ . '/../src'
+                ],
                 'config_cache_enabled' => false,
                 'module_map_cache_enabled' => false,
                 'check_dependencies' => true,
             ],
         ]);
-
-        return $moduleLoader->getServiceManager();
+        $this->assertInstanceOf(Module::class, $moduleLoader->getModule('Bupy7\Zf\TimeZone'));
     }
 }

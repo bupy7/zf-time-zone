@@ -1,14 +1,16 @@
 {
   "name": "bupy7/zf-time-zone",
-  "description": "Time zone module for Zend Framework 3.",
-  "version": "1.0.0",
+  "description": "Time zone module for Zend Framework 3 and Zend Expressive.",
+  "version": "1.0.1",
   "license": "BSD-3-Clause",
   "keywords": [
     "zend",
     "time",
     "zf",
     "zf3",
-    "zone"
+    "zone",
+    "zend expressive",
+    "expressive"
   ],
   "authors": [
     {
@@ -21,14 +23,21 @@
     "php": "^7.1",
     "container-interop/container-interop": "^1.2",
     "zendframework/zend-stdlib": "^3.1",
-    "zendframework/zend-modulemanager": "^2.7.2",
     "zendframework/zend-servicemanager": "^3.1"
   },
   "require-dev": {
+    "zendframework/zend-modulemanager": "^2.7.2",
     "zendframework/zend-test": "^3.0.1",
-    "friendsofphp/php-cs-fixer": "~2.2.3",
-    "phpunit/phpunit": ">=5.5 <6.0.0",
-    "satooshi/php-coveralls": "^1.0.1"
+    "friendsofphp/php-cs-fixer": "^2.14.0",
+    "phpunit/phpunit": "^7.5.2",
+    "php-coveralls/php-coveralls": "^2.1.0",
+    "psr/http-message": "^1.0.1",
+    "psr/http-server-middleware": "^1.0.0"
+  },
+  "suggest": {
+    "zendframework/zend-modulemanager": "For Zend Framework 3",
+    "psr/http-message": "For Zend Expressive",
+    "psr/http-server-middleware": "For Zend Expressive"
   },
   "autoload": {
     "psr-4": {
@@ -43,5 +52,8 @@
   "scripts": {
     "test:run": "php vendor/bin/phpunit --debug",
     "cs:fix": "php vendor/bin/php-cs-fixer fix --config=phpcs.php"
+  },
+  "config": {
+    "sort-packages": true
   }
 }

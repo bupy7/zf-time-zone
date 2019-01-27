@@ -13,28 +13,41 @@ Module for applying time zone towards the application.
 Installation
 ------------
 
-The preferred way to install this extension is through composer.
-
-Either run
+The preferred way to install this extension is through composer:
 
 ```
-$ php composer.phar require bupy7/zf-time-zone "*"
-```
-
-or add
-
-```
-"bupy7/zf-time-zone": "*"
+$ composer require bupy7/zf-time-zone "*"
 ```
 
 to the require section of your composer.json file.
 
+Additional for Zend Framework 3:
+
+```
+$ composer require zendframework/zend-modulemanager "*"
+```
+
+Additional for Zend Expressive:
+
+```
+$ composer require psr/http-message "*"
+$ composer require psr/http-server-middleware "*"
+```
+
 Usage
 -----
 
-1: Add `Bupy7\Zf\TimeZone` to module list.
+**For Zend Framework 3:**
 
-2: Set your time zone in local config:
+1. Add `Bupy7\Zf\TimeZone` to module list.
+
+**For Zend Expressive:**
+
+1: Add `Bupy7\Zf\TimeZone\ConfigProvider` to your config project;
+
+2: Add `Bupy7\Zf\TimeZone\Middleware\BootstrapMiddleware` to your middleware pipeline.
+
+**Next:** Set your time zone in a local config:
 
 ```php
 'time_zone' => [
@@ -42,7 +55,7 @@ Usage
 ],
 ```
 
-3: Profit!
+And profit!
 
 License
 -------

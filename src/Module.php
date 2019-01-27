@@ -1,4 +1,4 @@
-<?php
+<?php declare(strict_types=1);
 
 namespace Bupy7\Zf\TimeZone;
 
@@ -10,13 +10,17 @@ class Module implements ConfigProviderInterface, BootstrapListenerInterface
 {
     public function getConfig(): array
     {
-        return require __DIR__ . '/../config/module.config.php';
+        $configProvider = new ConfigProvider();
+        return [
+            'service_manager' => $configProvider->getDependencies(),
+            'time_zone' => $configProvider->getTimeZone(),
+        ];
     }
 
     public function onBootstrap(EventInterface $e): void
     {
         /** @var \Zend\Mvc\MvcEvent $e */
         $sm = $e->getApplication()->getServiceManager();
-        $sm->get('Bupy7\Zf\TimeZone\Service\TimeZoneService')->apply();
+        $sm->get('Bupy7\Zf\TimeZone\Bootstrap')->run();
     }
 }
