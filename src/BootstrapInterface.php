@@ -8,5 +8,8 @@ namespace Bupy7\Zf\TimeZone;
  */
 interface BootstrapInterface
 {
-    public function run(): void;
+    /**
+     * @since 1.1.0
+     */
+    public function __invoke(): void;
 }

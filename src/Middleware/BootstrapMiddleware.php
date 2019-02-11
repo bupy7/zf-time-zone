@@ -26,7 +26,7 @@ class BootstrapMiddleware implements MiddlewareInterface
 
     public function process(ServerRequestInterface $request, RequestHandlerInterface $handler): ResponseInterface
     {
-        $this->bootstrap->run();
+        $this->bootstrap->__invoke();
 
         return $handler->handle($request);
     }
