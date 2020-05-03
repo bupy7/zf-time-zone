@@ -21,6 +21,6 @@ class Module implements ConfigProviderInterface, BootstrapListenerInterface
     {
         /** @var \Zend\Mvc\MvcEvent $e */
         $sm = $e->getApplication()->getServiceManager();
-        $sm->get('Bupy7\Zf\TimeZone\Bootstrap')->run();
+        $sm->get('Bupy7\Zf\TimeZone\Bootstrap')->__invoke();
     }
 }
