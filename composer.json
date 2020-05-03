@@ -1,7 +1,7 @@
 {
   "name": "bupy7/zf-time-zone",
   "description": "Time zone module for Zend Framework 3 and Zend Expressive.",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "license": "BSD-3-Clause",
   "keywords": [
     "zend",
