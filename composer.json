@@ -1,7 +1,7 @@
 {
   "name": "bupy7/zf-time-zone",
-  "description": "Time zone module for Zend Framework 3 and Zend Expressive.",
-  "version": "1.1.2",
+  "description": "A time zone module for Laminas and Mezzio.",
+  "version": "2.0.0",
   "license": "BSD-3-Clause",
   "keywords": [
     "zend",
@@ -10,7 +10,9 @@
     "zf3",
     "zone",
     "zend expressive",
-    "expressive"
+    "expressive",
+    "laminas",
+    "mezzio"
   ],
   "authors": [
     {
@@ -21,12 +23,12 @@
   "require": {
     "php": "^7.1",
     "container-interop/container-interop": "^1.2",
-    "zendframework/zend-stdlib": "^3.1",
-    "zendframework/zend-servicemanager": "^3.1"
+    "laminas/laminas-stdlib": "^3.1",
+    "laminas/laminas-servicemanager": "^3.1"
   },
   "require-dev": {
-    "zendframework/zend-modulemanager": "^2.7.2",
-    "zendframework/zend-test": "^3.0.1",
+    "laminas/laminas-modulemanager": "^2.7.2",
+    "laminas/laminas-test": "^3.0.1",
     "friendsofphp/php-cs-fixer": "^2.14.0",
     "phpunit/phpunit": "^7.5.2",
     "php-coveralls/php-coveralls": "^2.1.0",
@@ -34,9 +36,9 @@
     "psr/http-server-middleware": "^1.0.0"
   },
   "suggest": {
-    "zendframework/zend-modulemanager": "For Zend Framework 3",
-    "psr/http-message": "For Zend Expressive",
-    "psr/http-server-middleware": "For Zend Expressive"
+    "laminas/laminas-modulemanager": "For Laminas",
+    "psr/http-message": "For Mezzio",
+    "psr/http-server-middleware": "For Mezzio"
   },
   "autoload": {
     "psr-4": {

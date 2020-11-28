@@ -3,7 +3,7 @@
 namespace Bupy7\Zf\TimeZone\Test\Functional\Bootstrap;
 
 use PHPUnit\Framework\TestCase;;
-use Zend\Test\Util\ModuleLoader;
+use Laminas\Test\Util\ModuleLoader;
 use Bupy7\Zf\TimeZone\Module;
 use Bupy7\Zf\TimeZone\Middleware\BootstrapMiddleware;
 use Bupy7\Zf\TimeZone\Bootstrap;

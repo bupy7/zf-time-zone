@@ -3,7 +3,7 @@
 namespace Bupy7\Zf\TimeZone\Service;
 
 use Interop\Container\ContainerInterface;
-use Zend\ServiceManager\Factory\FactoryInterface;
+use Laminas\ServiceManager\Factory\FactoryInterface;
 
 class TimeZoneServiceFactory implements FactoryInterface
 {

@@ -2,7 +2,7 @@
 
 namespace Bupy7\Zf\TimeZone;
 
-use Zend\ServiceManager\AbstractFactory\ReflectionBasedAbstractFactory;
+use Laminas\ServiceManager\AbstractFactory\ReflectionBasedAbstractFactory;
 
 /**
  * @author Belosloodcev Vasily <https://github.com/bupy7>

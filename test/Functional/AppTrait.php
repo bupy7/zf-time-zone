@@ -2,8 +2,8 @@
 
 namespace Bupy7\Zf\TimeZone\Test\Functional;
 
-use Zend\ServiceManager\ServiceManager;
-use Zend\Test\Util\ModuleLoader;
+use Laminas\ServiceManager\ServiceManager;
+use Laminas\Test\Util\ModuleLoader;
 
 /**
  * @author Vasily Belosloodcev <https://github.com/bupy7>
@@ -14,7 +14,7 @@ trait AppTrait
     {
         $moduleLoader = new ModuleLoader([
             'modules' => [
-                'Zend\Router',
+                'Laminas\Router',
                 'Bupy7\Zf\TimeZone',
             ],
             'module_listener_options' => [

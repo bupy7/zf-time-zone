@@ -21,13 +21,13 @@ $ composer require bupy7/zf-time-zone "*"
 
 to the require section of your composer.json file.
 
-Additional for Zend Framework 3:
+Additional for Laminas:
 
 ```
-$ composer require zendframework/zend-modulemanager "*"
+$ composer require laminas/zend-modulemanager "*"
 ```
 
-Additional for Zend Expressive:
+Additional for Mezzio:
 
 ```
 $ composer require psr/http-message "*"
@@ -37,11 +37,11 @@ $ composer require psr/http-server-middleware "*"
 Usage
 -----
 
-**For Zend Framework 3:**
+**For Laminas:**
 
 1. Add `Bupy7\Zf\TimeZone` to module list.
 
-**For Zend Expressive:**
+**For Mezzio:**
 
 1: Add `Bupy7\Zf\TimeZone\ConfigProvider` to your config project;
 

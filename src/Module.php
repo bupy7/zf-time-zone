@@ -2,9 +2,9 @@
 
 namespace Bupy7\Zf\TimeZone;
 
-use Zend\ModuleManager\Feature\ConfigProviderInterface;
-use Zend\ModuleManager\Feature\BootstrapListenerInterface;
-use Zend\EventManager\EventInterface;
+use Laminas\ModuleManager\Feature\ConfigProviderInterface;
+use Laminas\ModuleManager\Feature\BootstrapListenerInterface;
+use Laminas\EventManager\EventInterface;
 
 class Module implements ConfigProviderInterface, BootstrapListenerInterface
 {
@@ -19,7 +19,7 @@ class Module implements ConfigProviderInterface, BootstrapListenerInterface
 
     public function onBootstrap(EventInterface $e): void
     {
-        /** @var \Zend\Mvc\MvcEvent $e */
+        /** @var \Laminas\Mvc\MvcEvent $e */
         $sm = $e->getApplication()->getServiceManager();
         $sm->get('Bupy7\Zf\TimeZone\Bootstrap')->__invoke();
     }

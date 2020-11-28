@@ -1,6 +1,11 @@
 zf-time-zone
 ============
 
+2.0.0 [2020-11-28]
+------------------
+
+- Enh: Migrated Zend-packages to Laminas-packages.
+
 1.1.2 [2020-05-03]
 ------------------
 

@@ -3,7 +3,7 @@
 namespace Bupy7\Zf\TimeZone\Test\Functional;
 
 use PHPUnit\Framework\TestCase;;
-use Zend\Test\Util\ModuleLoader;
+use Laminas\Test\Util\ModuleLoader;
 use Bupy7\Zf\TimeZone\Module;
 
 /**
@@ -19,7 +19,7 @@ class ModuleTest extends TestCase
     {
         $moduleLoader = new ModuleLoader([
             'modules' => [
-                'Zend\Router',
+                'Laminas\Router',
                 'Bupy7\Zf\TimeZone',
             ],
             'module_listener_options' => [
